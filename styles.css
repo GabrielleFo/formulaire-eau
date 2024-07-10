@@ -1,0 +1,62 @@
+body{
+    font-family:'calibri', sans-serif;
+    
+  
+}
+
+.container {
+    width: 50%; /* Définit la moitié de la largeur de la page */
+    margin: auto; /* Centre l'encadré horizontalement */
+    padding: 20px; /* Ajoute un peu d'espace intérieur */
+    border: 2px solid #ccc; /* Ajoute une bordure grise de 2px */
+    border-radius: 10px; /* Ajoute des coins arrondis */
+}
+.hidden {
+    display: none;
+}
+.encadre{
+    border: 1px solid grey;
+    margin:10px;
+    padding:10px;
+}
+.suivant{
+    margin: 20px auto; /* Espacement extérieur et centrage horizontal */
+}
+
+.suivant,.precedent {
+        font-size: 20px; /* Taille de la police du bouton */
+        padding: 15px 30px; /* Espacement intérieur du bouton */
+       
+        display: block; /* Affichage en bloc pour permettre le centrage */
+        background-color: #4CAF50; /* Couleur de fond */
+        color: white; /* Couleur du texte */
+        border: none; /* Suppression de la bordure */
+        border-radius: 5px; /* Arrondir les coins */
+        cursor: pointer; /* Curseur en forme de main au survol */
+}
+
+    
+.suivant:hover {
+        background-color: #45a049; /* Couleur de fond au survol */ 
+}
+#result20, #result10 {
+    font-size: 24px; /* Augmenter la taille de la police */
+    font-weight: bold; /* Mettre en gras */
+    color: white; /* Couleur du texte */
+    padding: 20px; /* Ajouter du padding pour plus d'espace */
+    border-radius: 10px; /* Arrondir les coins */
+    margin: 20px 0; /* Ajouter de l'espace vertical */
+    text-align: center; /* Centrer le texte */
+}
+
+#result20 {
+    background-color: red; /* Couleur de fond pour le taux de 20% */
+}
+
+#result10 {
+    background-color: #2196F3; /* Couleur de fond pour le taux de 10% */
+}
+ol.deroulement li span {
+    font-weight: bold !important;
+    color: blue; /* Exemple de changement de couleur */
+}
