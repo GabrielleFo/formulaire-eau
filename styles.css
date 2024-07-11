@@ -28,7 +28,7 @@ body{
         padding: 15px 30px; /* Espacement intérieur du bouton */
        
         display: block; /* Affichage en bloc pour permettre le centrage */
-        background-color: #4CAF50; /* Couleur de fond */
+        background-color: black; /* Couleur de fond */
         color: white; /* Couleur du texte */
         border: none; /* Suppression de la bordure */
         border-radius: 5px; /* Arrondir les coins */
@@ -37,9 +37,9 @@ body{
 
     
 .suivant:hover {
-        background-color: #45a049; /* Couleur de fond au survol */ 
+        background-color: #4CAF50; /* Couleur de fond au survol */ 
 }
-#result20, #result10 {
+#result20, #result10,#result0 {
     font-size: 24px; /* Augmenter la taille de la police */
     font-weight: bold; /* Mettre en gras */
     color: white; /* Couleur du texte */
@@ -56,7 +56,26 @@ body{
 #result10 {
     background-color: #2196F3; /* Couleur de fond pour le taux de 10% */
 }
+#result0 {
+    background-color: greenyellow; /* Couleur de fond pour le taux de 10% */
+}
 ol.deroulement li span {
     font-weight: bold !important;
     color: blue; /* Exemple de changement de couleur */
+}
+.condition{
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+label{
+    font-size:22px;
+}
+abbr{
+    color:red;
+}
+label {
+    display: block;
+    
 }

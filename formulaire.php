@@ -42,7 +42,28 @@
                 ⦁	Services rendus dans le cadre des contrats d'abonnement proposés par les sociétés d'économie d'eau"style="font-weight: bold;font-size:20px;">les installations</abbr> nécessaires au service public municipal de l'eau ou de l’assainissement (collectif ou non collectif) ou un contrôle sanitaire ?</label><br>
             <input type="radio" id="q1_yes" name="question1" value="yes" onclick="handleQuestion1('yes')"> Oui<br>
             <input type="radio" id="q1_no" name="question1" value="no" onclick="handleQuestion1('no')"> Non<br>
-
+             <!-- Question 1-1 -->
+             <div id="question1-2" class="hidden">
+                <label for="question1-2">1-2 La prestation concerne t'elle des travaux d'analyses sur l'eau sur un navire  ?</label><br>
+                <input type="radio" id="q1-2_yes" name="question1-2" value="yes" onclick="handleSubQuestion1('yes')"> Oui<br>
+                <input type="radio" id="q1-2_no" name="question1-2" value="no" onclick="handleSubQuestion1('no')"> Non<br>
+            </div>
+             <!-- Question 1-2 -->
+             <div id="checkboxes" class="hidden">
+                <label> conditions du navire : </label><br>
+                <p class="condition">Veuillez vérifier auprès du client les informations nécessaires. <a href="https://bofip.impots.gouv.fr/bofip/9765-PGP.html/identifiant=BOI-LETTRE-000235-20190109" target="_blank">Attestation ici</a>.</p>
+                <input type="checkbox" class="nav-checkbox" id="cb1" name="checkbox1"data-checkbox> navire inscrit à un registre commercial<br>
+                <input type="checkbox" class="nav-checkbox"id="cb2" name="checkbox2"data-checkbox> navire doté d'un équipage permanent<br>
+                <input type="checkbox" class="nav-checkbox"id="cb3" name="checkbox3"data-checkbox> navire exclusivement affecté à une activité<br>
+                <input type="checkbox" class="nav-checkbox"id="cb4" name="checkbox4"data-checkbox> navire mesurant au moins 15 m de long<br>
+                <input type="checkbox" id="cb5" name="checkbox5"data-checkbox> navire effectuant au moins 70% de ses trajets en dehors des eaux territoriales françaises<br>
+              
+            </div>
+            <div id="yes-no-question" class="hidden">
+                <label for="yes-no-question">1-3 Avez vous coché toutes les propositions au dessus ?</label><br>
+                <input type="radio" id="yes-no-yes" name="yes-no-question" value="yes" onclick="handleYesNo('yes')"> Oui<br>
+                <input type="radio" id="yes-no-no" name="yes-no-question" value="no" onclick="handleYesNo('no')"> Non<br>
+            </div>
             <!-- Question 2 -->
             <div id="question2" class="hidden">
                 <label for="question2">2-La prestation est-elle effectuée pour permettre à la commune d'assurer <abbr title="Gestion du service public municipal de l'eau :
@@ -99,6 +120,9 @@
             </div>
             <div id="result10" class="hidden">
                 Le taux applicable est de 10%.
+            </div>
+            <div id="result0" class="hidden">
+                Le taux applicable est de 0%.
             </div>
         </form>
     </div>
